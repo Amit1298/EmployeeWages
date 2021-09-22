@@ -11,6 +11,7 @@ namespace EmployeeWages
             DailyEmployeeWage employee = new DailyEmployeeWage();
             AddPartTimeEmployee partTime = new AddPartTimeEmployee();
             EmployeeWagesSwitchCase SCEmployeeWage = new EmployeeWagesSwitchCase();
+            EmployeeWagesMonth WageMonth = new EmployeeWagesMonth();
             //Constants
             int Is_FULL_TIME = 1;
             Random random = new Random();
@@ -28,6 +29,7 @@ namespace EmployeeWages
             employee.Wages();
             partTime.ExtraTime();
             SCEmployeeWage.EWSwitch();
+            WageMonth.EWMonth();
             Console.ReadLine();
         }
     }
