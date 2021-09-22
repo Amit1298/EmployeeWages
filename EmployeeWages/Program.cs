@@ -10,6 +10,7 @@ namespace EmployeeWages
             Console.WriteLine("Welcome to Employee Wage System");
             DailyEmployeeWage employee = new DailyEmployeeWage();
             AddPartTimeEmployee partTime = new AddPartTimeEmployee();
+            EmployeeWagesSwitchCase SCEmployeeWage = new EmployeeWagesSwitchCase();
             //Constants
             int Is_FULL_TIME = 1;
             Random random = new Random();
@@ -26,6 +27,7 @@ namespace EmployeeWages
             
             employee.Wages();
             partTime.ExtraTime();
+            SCEmployeeWage.EWSwitch();
             Console.ReadLine();
         }
     }
