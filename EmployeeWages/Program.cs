@@ -9,8 +9,9 @@ namespace EmployeeWages
         {
             Console.WriteLine("Welcome to Employee Wage System");
             DailyEmployeeWage employee = new DailyEmployeeWage();
+            AddPartTimeEmployee partTime = new AddPartTimeEmployee();
             //Constants
-            /*int Is_FULL_TIME = 1;
+            int Is_FULL_TIME = 1;
             Random random = new Random();
             //Computation
             int empCheck = random.Next(0, 2);
@@ -22,8 +23,9 @@ namespace EmployeeWages
             {
                 Console.WriteLine("Employee is Absent");
             }
-            */
+            
             employee.Wages();
+            partTime.ExtraTime();
             Console.ReadLine();
         }
     }
