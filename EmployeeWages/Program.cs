@@ -2,12 +2,15 @@
 
 namespace EmployeeWages
 {
+    
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Employee Wage System");
+            DailyEmployeeWage employee = new DailyEmployeeWage();
             //Constants
-            int Is_FULL_TIME = 1;
+            /*int Is_FULL_TIME = 1;
             Random random = new Random();
             //Computation
             int empCheck = random.Next(0, 2);
@@ -19,6 +22,8 @@ namespace EmployeeWages
             {
                 Console.WriteLine("Employee is Absent");
             }
+            */
+            employee.Wages();
             Console.ReadLine();
         }
     }
