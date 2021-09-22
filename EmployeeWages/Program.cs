@@ -12,6 +12,7 @@ namespace EmployeeWages
             AddPartTimeEmployee partTime = new AddPartTimeEmployee();
             EmployeeWagesSwitchCase SCEmployeeWage = new EmployeeWagesSwitchCase();
             EmployeeWagesMonth WageMonth = new EmployeeWagesMonth();
+            totalWorkingHour toalEmpWage = new totalWorkingHour();
             //Constants
             int Is_FULL_TIME = 1;
             Random random = new Random();
@@ -30,6 +31,7 @@ namespace EmployeeWages
             partTime.ExtraTime();
             SCEmployeeWage.EWSwitch();
             WageMonth.EWMonth();
+            toalEmpWage.TWHEmpWage();
             Console.ReadLine();
         }
     }
